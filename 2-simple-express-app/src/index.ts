@@ -13,3 +13,13 @@ app.post("/sum", (req, res) => {
         answer
     })
 });
+
+app.post("/multiply", (req, res) => {
+    const a = req.body.a;
+    const b = req.body.b
+    const answer = a * b;
+
+    res.json({
+        answer
+    })
+})
